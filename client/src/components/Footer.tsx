@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import logoImage from "@/assets/logo.jpg";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -28,9 +29,7 @@ export function Footer() {
           {/* Column 1: Clinic Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">RH</span>
-              </div>
+              <img src={logoImage} alt="RAJA Health Care Logo" className="w-10 h-10 rounded-full object-cover" />
               <div>
                 <div className="font-serif font-bold text-lg leading-none">RAJA Health Care</div>
                 <div className="text-xs text-muted-foreground">Physiotherapy Clinic</div>

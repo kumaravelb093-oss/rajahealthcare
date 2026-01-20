@@ -2,6 +2,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import logoImage from "@/assets/logo.jpg";
 
 export function Navigation() {
   const [location] = useLocation();
@@ -20,9 +21,7 @@ export function Navigation() {
       <nav className="max-w-7xl mx-auto px-6 md:px-8 h-16 flex items-center justify-between">
         <Link href="/" data-testid="link-home">
           <div className="flex items-center gap-3 hover-elevate active-elevate-2 transition-all duration-300 px-3 py-2 rounded-lg cursor-pointer">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">RH</span>
-            </div>
+            <img src={logoImage} alt="RAJA Health Care Logo" className="w-10 h-10 rounded-full object-cover" />
             <div className="hidden sm:block">
               <div className="font-serif font-bold text-lg leading-none">RAJA Health Care</div>
               <div className="text-xs text-muted-foreground">Physiotherapy Clinic</div>
@@ -35,11 +34,10 @@ export function Navigation() {
           {navItems.map((item) => (
             <Link key={item.path} href={item.path} data-testid={`link-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
               <button
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover-elevate active-elevate-2 ${
-                  location === item.path
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover-elevate active-elevate-2 ${location === item.path
                     ? "text-primary"
                     : "text-foreground"
-                }`}
+                  }`}
               >
                 {item.label}
               </button>
@@ -77,11 +75,10 @@ export function Navigation() {
               <Link key={item.path} href={item.path} data-testid={`link-mobile-${item.label.toLowerCase().replace(/\s+/g, '-')}`}>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`w-full text-left px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 hover-elevate active-elevate-2 ${
-                    location === item.path
+                  className={`w-full text-left px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 hover-elevate active-elevate-2 ${location === item.path
                       ? "text-primary bg-accent"
                       : "text-foreground"
-                  }`}
+                    }`}
                 >
                   {item.label}
                 </button>
