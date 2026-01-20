@@ -19,7 +19,7 @@ import {
   ArrowRight,
   Phone
 } from "lucide-react";
-import heroImage from "@assets/generated_images/Doctor_in_clinic_hero_80beda9d.png";
+import logoImage from "@/assets/logo.jpg";
 import doctorImage from "@/assets/doctor.jpg";
 
 export default function Home() {
@@ -108,12 +108,22 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="min-h-[600px] md:min-h-[700px] flex items-center bg-gradient-to-br from-accent/30 to-background pt-16">
-        <div className="max-w-7xl mx-auto px-6 md:px-8 py-12 md:py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+      <section className="min-h-[500px] flex items-center bg-gradient-to-br from-accent/30 to-background pt-24 pb-12">
+        <div className="max-w-7xl mx-auto px-6 md:px-8 text-center">
+          <div className="flex flex-col items-center space-y-8">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+              <img
+                src={logoImage}
+                alt="RAJA Health Care Logo"
+                className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-2xl border-4 border-background"
+                data-testid="img-logo-hero"
+              />
+            </div>
+
+            <div className="max-w-3xl space-y-6">
               <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-serif leading-tight" data-testid="text-hero-headline">
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-serif leading-tight" data-testid="text-hero-headline">
                   Leading Physiotherapy Care in Salem
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground">
@@ -126,7 +136,7 @@ export default function Home() {
                 We are committed to providing exceptional, compassionate care for a wide range of physiotherapy needs.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Link href="/book-appointment" data-testid="link-hero-book">
                   <Button size="lg" className="text-base px-8 shadow-lg w-full sm:w-auto">
                     Book Appointment
@@ -138,17 +148,6 @@ export default function Home() {
                     View Our Services
                   </Button>
                 </Link>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src={heroImage}
-                  alt="Modern physiotherapy clinic"
-                  className="w-full h-auto object-cover"
-                  data-testid="img-hero"
-                />
               </div>
             </div>
           </div>
