@@ -2,12 +2,12 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Activity, 
-  Zap, 
-  AlertCircle, 
-  Move, 
-  Brain, 
+import {
+  Activity,
+  Zap,
+  AlertCircle,
+  Move,
+  Brain,
   Moon,
   Heart,
   Shield,
@@ -20,6 +20,7 @@ import {
   Phone
 } from "lucide-react";
 import heroImage from "@assets/generated_images/Doctor_in_clinic_hero_80beda9d.png";
+import doctorImage from "@/assets/doctor.jpg";
 
 export default function Home() {
   const stats = [
@@ -119,7 +120,7 @@ export default function Home() {
                   Your Partner in Physiotherapy Wellness
                 </p>
               </div>
-              
+
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Welcome to RAJA Health Care Clinic, a dedicated physiotherapy center in the heart of Arisipalayam, Salem.
                 We are committed to providing exceptional, compassionate care for a wide range of physiotherapy needs.
@@ -142,9 +143,9 @@ export default function Home() {
 
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src={heroImage} 
-                  alt="Modern physiotherapy clinic" 
+                <img
+                  src={heroImage}
+                  alt="Modern physiotherapy clinic"
                   className="w-full h-auto object-cover"
                   data-testid="img-hero"
                 />
@@ -185,8 +186,8 @@ export default function Home() {
             Welcome to Excellence in Physiotherapy Care
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Our clinic is equipped with state-of-the-art diagnostic facilities, and our expert team 
-            is here to guide you on your path to recovery and well-being. We believe in empowering 
+            Our clinic is equipped with state-of-the-art diagnostic facilities, and our expert team
+            is here to guide you on your path to recovery and well-being. We believe in empowering
             our patients with knowledge and involving them in their own treatment plans.
           </p>
         </div>
@@ -276,8 +277,8 @@ export default function Home() {
                     <p className="text-xl text-primary font-semibold">M.D., D.M. (Neurology)</p>
                   </div>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Dr. Raja is a distinguished neurologist with over 15 years of experience in diagnosing 
-                    and treating a wide spectrum of neurological disorders. He is dedicated to providing 
+                    Dr. Raja is a distinguished neurologist with over 15 years of experience in diagnosing
+                    and treating a wide spectrum of neurological disorders. He is dedicated to providing
                     exceptional, personalized patient care.
                   </p>
                   <div className="flex flex-wrap gap-2">
@@ -294,14 +295,13 @@ export default function Home() {
                 </div>
                 <div className="order-first md:order-last">
                   <div className="text-center md:text-right">
-                    <div className="inline-block p-1 bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl">
-                      <div className="w-full h-full bg-card rounded-xl p-6">
-                        <Award className="w-24 h-24 mx-auto text-primary" />
-                        <div className="mt-4 space-y-1">
-                          <div className="text-2xl font-bold">15+ Years</div>
-                          <div className="text-sm text-muted-foreground">Clinical Excellence</div>
-                        </div>
-                      </div>
+                    <div className="rounded-2xl overflow-hidden shadow-xl max-w-sm ml-auto">
+                      <img
+                        src={doctorImage}
+                        alt="Dr. Raja"
+                        className="w-full h-auto object-cover"
+                        data-testid="img-doctor-home"
+                      />
                     </div>
                   </div>
                 </div>

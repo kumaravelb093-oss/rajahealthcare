@@ -2,15 +2,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { 
-  GraduationCap, 
-  Award, 
-  Briefcase, 
+import {
+  GraduationCap,
+  Award,
+  Briefcase,
   BookOpen,
   ArrowRight,
   Stethoscope
 } from "lucide-react";
-import doctorImage from "@assets/generated_images/Doctor_professional_headshot_portrait_1b61ad5d.png";
+import doctorImage from "@/assets/doctor.jpg";
 
 export default function Doctor() {
   const expertise = [
@@ -50,9 +50,9 @@ export default function Doctor() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-last lg:order-first">
               <div className="rounded-2xl overflow-hidden shadow-xl max-w-md mx-auto">
-                <img 
-                  src={doctorImage} 
-                  alt="Dr. Raja - Neurologist" 
+                <img
+                  src={doctorImage}
+                  alt="Dr. Raja - Neurologist"
                   className="w-full h-auto object-cover"
                   data-testid="img-doctor"
                 />
