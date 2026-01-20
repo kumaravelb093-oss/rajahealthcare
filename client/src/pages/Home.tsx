@@ -124,16 +124,16 @@ export default function Home() {
             <div className="max-w-3xl space-y-6">
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-serif leading-tight" data-testid="text-hero-headline">
-                  Leading Physiotherapy Care in Salem
+                  Leading Health Care in Salem
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground">
-                  Your Partner in Physiotherapy Wellness
+                  Your Partner in Health Care Wellness
                 </p>
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Welcome to RAJA Health Care Clinic, a dedicated physiotherapy center in the heart of Arisipalayam, Salem.
-                We are committed to providing exceptional, compassionate care for a wide range of physiotherapy needs.
+                Welcome to RAJA Health Care Clinic, a dedicated health care center in the heart of Arisipalayam, Salem.
+                We are committed to providing exceptional, compassionate care for a wide range of health care needs.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -182,7 +182,7 @@ export default function Home() {
       <section className="py-20 md:py-24">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold font-serif">
-            Welcome to Excellence in Physiotherapy Care
+            Welcome to Excellence in Health Care
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Our clinic is equipped with state-of-the-art diagnostic facilities, and our expert team
@@ -198,7 +198,7 @@ export default function Home() {
           <div className="text-center space-y-4 mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-serif">Our Specialized Services</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive care for all your physiotherapy needs
+              Comprehensive care for all your health care needs
             </p>
           </div>
 
@@ -371,7 +371,7 @@ export default function Home() {
             Take the First Step Towards Better Health
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Schedule your consultation today and experience compassionate, expert physiotherapy care.
+            Schedule your consultation today and experience compassionate, expert health care.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/book-appointment" data-testid="link-final-book">

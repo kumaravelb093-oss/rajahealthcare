@@ -43,7 +43,7 @@ export default function About() {
             About RAJA Health Care Clinic
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            A dedicated physiotherapy center committed to providing exceptional, compassionate care
+            A dedicated health care center committed to providing exceptional, compassionate care
             for a wide range of rehabilitation needs.
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function About() {
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold font-serif">Our Mission</h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  To provide the highest quality physiotherapy care with a patient-centered approach.
+                  To provide the highest quality health care with a patient-centered approach.
                   We believe in empowering our patients with knowledge and involving them in their
                   own treatment plans.
                 </p>
@@ -74,7 +74,7 @@ export default function About() {
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold font-serif">Our Vision</h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  To be the leading physiotherapy clinic in the region, recognized for our clinical
+                  To be the leading health care clinic in the region, recognized for our clinical
                   excellence, compassionate care, and commitment to innovation in rehabilitation.
                 </p>
               </CardContent>
@@ -87,7 +87,7 @@ export default function About() {
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold font-serif">Our Values</h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Compassion, excellence, integrity, and teamwork form the foundation of everything 
+                  Compassion, excellence, integrity, and teamwork form the foundation of everything
                   we do, ensuring the best outcomes for our patients.
                 </p>
               </CardContent>
@@ -100,7 +100,7 @@ export default function About() {
               The Values That Guide Us
             </h3>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {values.map((value, index) => {
               const Icon = value.icon;
@@ -134,15 +134,15 @@ export default function About() {
                 <h2 className="text-3xl md:text-4xl font-bold font-serif">Our Facility</h2>
               </div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Our clinic in Arisipalayam, Salem, is designed to provide a comfortable and welcoming 
-                environment for our patients. We are equipped with the latest technology for accurate 
+                Our clinic in Arisipalayam, Salem, is designed to provide a comfortable and welcoming
+                environment for our patients. We are equipped with the latest technology for accurate
                 diagnosis and effective treatment.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                   <p className="text-base text-muted-foreground">
-                    State-of-the-art equipment for comprehensive physiotherapy assessments
+                    State-of-the-art equipment for comprehensive health care assessments
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -168,9 +168,9 @@ export default function About() {
 
             <div className="order-first lg:order-last">
               <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src={receptionImage} 
-                  alt="Modern clinic reception area" 
+                <img
+                  src={receptionImage}
+                  alt="Modern clinic reception area"
                   className="w-full h-auto object-cover"
                   data-testid="img-facility"
                 />
@@ -186,7 +186,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold font-serif text-center mb-12">
             Our Journey
           </h2>
-          
+
           <div className="space-y-8">
             {milestones.map((milestone, index) => (
               <div key={index} className="flex gap-6 group" data-testid={`milestone-${index}`}>
@@ -220,7 +220,7 @@ export default function About() {
             Our Patient-Centered Approach
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            At RAJA Health Care Clinic, we believe that effective physiotherapy care requires a
+            At RAJA Health Care Clinic, we believe that effective health care requires a
             collaborative approach. We work closely with each patient to understand their unique
             needs and concerns, developing personalized treatment plans that address not just the
             symptoms, but the whole person.
@@ -239,7 +239,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold font-serif text-center mb-12">
             Accreditations & Certifications
           </h2>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center hover-elevate transition-all duration-300" data-testid="card-cert-1">
               <CardContent className="p-8 space-y-4">

@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Activity, 
-  Zap, 
-  AlertCircle, 
-  Move, 
-  Brain, 
+import {
+  Activity,
+  Zap,
+  AlertCircle,
+  Move,
+  Brain,
   Moon,
   Baby,
   Shield,
@@ -98,7 +98,7 @@ export default function Services() {
             Our Specialized Services
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Comprehensive physiotherapy care tailored to your specific needs. Explore our specialized
+            Comprehensive health care tailored to your specific needs. Explore our specialized
             programs designed to assess, treat, and rehabilitate a wide range of conditions.
           </p>
         </div>
@@ -153,7 +153,7 @@ export default function Services() {
             Ready to Get Started?
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Schedule a physiotherapy consultation to discuss your needs and explore the best
+            Schedule a health care consultation to discuss your needs and explore the best
             treatment options for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

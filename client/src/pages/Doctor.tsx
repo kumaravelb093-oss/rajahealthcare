@@ -100,7 +100,7 @@ export default function Doctor() {
                   <h2 className="text-2xl md:text-3xl font-bold font-serif">A Message from Dr. Raja</h2>
                 </div>
                 <blockquote className="text-lg text-muted-foreground leading-relaxed italic border-l-4 border-primary/20 pl-6">
-                  "I believe in a holistic approach to physiotherapy care, where I partner with my patients
+                  "I believe in a holistic approach to health care, where I partner with my patients
                   to understand their concerns and develop a personalized treatment plan that works for them.
                   My goal is to not only treat the condition but also to improve the overall quality of life
                   for my patients. I am passionate about staying at the forefront of rehabilitation science
@@ -209,7 +209,7 @@ export default function Doctor() {
       <section className="py-20 md:py-24 bg-gradient-to-br from-primary/5 to-accent/20">
         <div className="max-w-4xl mx-auto px-6 md:px-8 text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-bold font-serif">
-            Experience Expert Physiotherapy Care
+            Experience Expert Health Care
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Schedule your consultation with Dr. Raja today and take the first step towards better mobility and health.
