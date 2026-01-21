@@ -33,28 +33,28 @@ export default function Home() {
   const services = [
     {
       title: "Sports Physiotherapy",
-      intro: "Achieve peak performance with our tailored injury prevention and recovery programs.",
+      intro: "injury prevention and performance care",
       final: "We provide the elite care you need to stay active and reach your fitness goals.",
       icon: Move,
       id: "sports"
     },
     {
       title: "Geriatric Rehabilitation",
-      intro: "Enhance your mobility and independence through our specialized osteoporosis and balance programs.",
+      intro: "osteoporosis and balance disorders",
       final: "We focus on proven techniques that ensure your safety and confidence in every step.",
       icon: Shield,
       id: "geriatric"
     },
     {
       title: "Pain Management",
-      intro: "Find sustainable relief from chronic and acute pain through our personalized treatment strategies.",
+      intro: "chronic and acute pain conditions",
       final: "We prioritize your comfort by restoring function and improving your daily quality of life.",
       icon: Activity,
       id: "pain-management"
     },
     {
       title: "Pediatric Physiotherapy",
-      intro: "Supporting children with developmental milestones through compassionate and play-based therapeutic care.",
+      intro: "cerebral palsy, muscular dystrophy, autism, juvenile rheumatoid arthritis",
       final: "Our specialized approach helps every child thrive by reaching their full physical potential.",
       icon: Baby,
       id: "pediatrics"

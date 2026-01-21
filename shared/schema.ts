@@ -42,25 +42,25 @@ export const servicesData = [
   {
     id: "sports-physiotherapy",
     title: "Sports Physiotherapy",
-    description: "Achieve peak performance with our tailored injury prevention and recovery programs. We provide the elite care you need to stay active and reach your fitness goals.",
+    description: "injury prevention and performance care. We provide the elite care you need to stay active and reach your fitness goals.",
     icon: "move",
   },
   {
     id: "geriatric-rehabilitation",
     title: "Geriatric Rehabilitation",
-    description: "Enhance your mobility and independence through our specialized osteoporosis and balance programs. We focus on proven techniques that ensure your safety and confidence in every step.",
+    description: "osteoporosis and balance disorders. We focus on proven techniques that ensure your safety and confidence in every step.",
     icon: "shield",
   },
   {
     id: "pain-management",
     title: "Pain Management",
-    description: "Find sustainable relief from chronic and acute pain through our personalized treatment strategies. We prioritize your comfort by restoring function and improving your daily quality of life.",
+    description: "chronic and acute pain conditions. We prioritize your comfort by restoring function and improving your daily quality of life.",
     icon: "activity",
   },
   {
     id: "pediatric-physiotherapy",
     title: "Pediatric Physiotherapy",
-    description: "Supporting children with developmental milestones through compassionate and play-based therapeutic care. Our specialized approach helps every child thrive by reaching their full physical potential.",
+    description: "cerebral palsy, muscular dystrophy, autism, juvenile rheumatoid arthritis. Our specialized approach helps every child thrive by reaching their full physical potential.",
     icon: "baby",
   },
 ] as const;
