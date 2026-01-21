@@ -62,12 +62,7 @@ export default function Services() {
       title: "Sports Injury Rehabilitation",
       description: "Return to sport safely with targeted rehab for acute and chronic injuries.",
       details: [
-        "Throwing Injuries (Shoulder & Elbow)",
-        "Ankle Injuries",
-        "Acute Muscle Strains",
-        "Ligament Sprains",
-        "Chronic Overuse Tendon Injuries",
-        "Joint Instability"
+        "Injury prevention exercises"
       ]
     },
     {
@@ -75,9 +70,8 @@ export default function Services() {
       title: "Geriatric Physiotherapy",
       description: "Holistic care to improve function and quality of life in older adults.",
       details: [
-        "Physiotherapy for Geriatric population to improve quality of life",
-        "Exercises, manual therapy, and therapeutic techniques",
-        "Individualized plans to regain and maintain physical abilities"
+        "Osteoporosis",
+        "Balance disorder"
       ]
     },
     {
@@ -87,6 +81,27 @@ export default function Services() {
       details: [
         "Pelvic Floor Rehabilitation",
         "Antenatal and postnatal exercise program"
+      ]
+    },
+    {
+      icon: Activity,
+      title: "Pain Management",
+      description: "Specialized approach for patients dealing with chronic and acute pain conditions.",
+      details: [
+        "Chronic Pain Management",
+        "Acute Pain Relief",
+        "Evidence-based Techniques"
+      ]
+    },
+    {
+      icon: Baby,
+      title: "Pediatrics",
+      description: "Specialized physiotherapy care for children with developmental and physical conditions.",
+      details: [
+        "Cerebral Palsy",
+        "Muscular Dystrophy",
+        "Autism",
+        "Juvenile rheumatoid arthritis"
       ]
     },
   ];

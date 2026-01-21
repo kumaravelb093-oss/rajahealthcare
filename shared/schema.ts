@@ -96,7 +96,25 @@ export const servicesData = [
   {
     id: "pain-management",
     title: "Pain Management",
-    description: "Comprehensive approach to managing chronic neurological pain.",
-    icon: "heart-pulse",
+    description: "Specialized approach for patients dealing with chronic and acute pain conditions.",
+    icon: "activity",
+  },
+  {
+    id: "pediatrics",
+    title: "Pediatrics",
+    description: "Specialized care for children (Cerebral Palsy, Autism, etc.).",
+    icon: "baby",
+  },
+  {
+    id: "sports-injury",
+    title: "Sports Injury Rehab",
+    description: "Injury prevention exercises and sports recovery.",
+    icon: "move",
+  },
+  {
+    id: "geriatric",
+    title: "Geriatric Physiotherapy",
+    description: "Osteoporosis and Balance disorder management.",
+    icon: "shield",
   },
 ] as const;

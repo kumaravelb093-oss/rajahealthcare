@@ -51,21 +51,27 @@ export default function Home() {
     },
     {
       title: "Sports Injury Rehab",
-      description: "Throwing injuries, ligament sprains, muscle strains, instability",
+      description: "Injury prevention exercises",
       icon: Move,
       id: "sports"
     },
     {
       title: "Geriatric Physiotherapy",
-      description: "Holistic programs to improve function and quality of life",
+      description: "Osteoporosis and Balance disorder",
       icon: Shield,
       id: "geriatric"
     },
     {
-      title: "Women's Health",
-      description: "Pelvic floor rehab, antenatal and postnatal exercise programs",
+      title: "Pain Management",
+      description: "Specialized approach for chronic and acute pain conditions",
+      icon: Activity,
+      id: "pain-management"
+    },
+    {
+      title: "Pediatrics",
+      description: "Cerebral Palsy, Muscular Dystrophy, Autism",
       icon: Baby,
-      id: "womens-health"
+      id: "pediatrics"
     },
   ];
 
