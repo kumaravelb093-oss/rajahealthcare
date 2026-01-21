@@ -15,11 +15,11 @@ export function Footer() {
   ];
 
   const topServices = [
-    "Stroke Management",
-    "Epilepsy Treatment",
-    "Headache Clinic",
-    "Movement Disorders",
-    "Memory Care",
+    "Orthopedic Care",
+    "Sports Injury Rehab",
+    "Geriatric Physiotherapy",
+    "Pain Management",
+    "Pediatrics",
   ];
 
   return (

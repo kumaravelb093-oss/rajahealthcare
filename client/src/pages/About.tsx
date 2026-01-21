@@ -256,7 +256,7 @@ export default function About() {
                 <Award className="w-12 h-12 mx-auto text-primary" />
                 <h3 className="text-xl font-semibold">Board Certified</h3>
                 <p className="text-sm text-muted-foreground">
-                  Board certified in Neurology (D.M.)
+                  Board certified in Physiotherapy & Rehabilitation
                 </p>
               </CardContent>
             </Card>
