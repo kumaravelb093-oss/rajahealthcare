@@ -86,7 +86,7 @@ export default function ContactPage() {
   ];
 
   const clinicHours = [
-    { day: "Monday - Sunday", hours: "9:00 AM - 9:00 PM" },
+    { day: "Mon to Sun", hours: "9:00 AM - 9:00 PM" },
   ];
 
   return (

@@ -25,7 +25,7 @@ import doctorImage from "@/assets/doctor.jpg";
 export default function Home() {
   const stats = [
     { number: "5+", label: "Years Experience", icon: Award },
-    { number: "5000+", label: "Patients Treated", icon: Users },
+    { number: "1000+", label: "Patients Treated", icon: Users },
     { number: "10+", label: "Specialized Services", icon: Activity },
     { number: "4.9/5", label: "Patient Rating", icon: Star },
   ];
@@ -44,8 +44,8 @@ export default function Home() {
       id: "neuro-physio"
     },
     {
-      title: "Cardiac Rehabilitation",
-      description: "Post CABG, valve replacement and post–heart attack recovery",
+      title: "Cardio Pulmonary Rehabilitation",
+      description: "Post CABG, valve replacement, post–heart attack recovery and COPD",
       icon: Heart,
       id: "cardiac"
     },
@@ -76,8 +76,8 @@ export default function Home() {
       icon: Award,
     },
     {
-      title: "Advanced Diagnostics",
-      description: "State-of-the-art diagnostic facilities for accurate assessment",
+      title: "Evidence based treatment approach",
+      description: "By utilizing a comprehensive range of evidence-based techniques and modern equipment,",
       icon: Activity,
     },
     {
@@ -274,7 +274,7 @@ export default function Home() {
                 <div className="space-y-6">
                   <div className="space-y-2">
                     <h2 className="text-3xl md:text-4xl font-bold font-serif">About Dr. Raja</h2>
-                    <p className="text-xl text-primary font-semibold">M.D., D.M. (Neurology)</p>
+                    <p className="text-xl text-primary font-semibold">Chief Medical Officer</p>
                   </div>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     Dr. Raja is the driving force and clinical director behind Raja health care clinic,

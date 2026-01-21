@@ -47,12 +47,14 @@ export default function Services() {
     },
     {
       icon: HeartPulse,
-      title: "Cardiac Rehabilitation",
-      description: "Structured programs to improve cardiovascular health and recovery.",
+      title: "Cardio Pulmonary Rehabilitation",
+      description: "Structured programs to improve cardiovascular and respiratory health.",
       details: [
         "Post CABG",
         "Post Valve Replacement",
-        "Post Heart Attack"
+        "Post Heart Attack",
+        "Chronic obstructive pulmonary disease (COPD)",
+        "Bronchial Asthma"
       ]
     },
     {

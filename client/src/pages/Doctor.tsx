@@ -62,7 +62,7 @@ export default function Doctor() {
                 <h1 className="text-4xl md:text-5xl font-bold font-serif" data-testid="text-doctor-name">
                   Dr. Raja
                 </h1>
-                <p className="text-2xl text-primary font-semibold">M.D., D.M. (Neurology)</p>
+                <p className="text-2xl text-primary font-semibold">Chief Medical Officer</p>
                 <p className="text-lg text-muted-foreground">
                   Distinguished Specialist | 5+ Years Experience
                 </p>
@@ -205,7 +205,7 @@ export default function Doctor() {
             Experience Expert Health Care
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Schedule your consultation with Dr. Raja today and take the first step towards better mobility and health.
+            Schedule your consultation with raja health care clinic today and take the first step towards better mobility and health.
           </p>
           <Link href="/book-appointment" data-testid="link-doctor-cta">
             <Button size="lg" className="text-base px-8 shadow-lg">
