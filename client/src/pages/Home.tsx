@@ -32,44 +32,30 @@ export default function Home() {
 
   const services = [
     {
-      title: "Orthopedic Physiotherapy",
-      description: "Low back, neck, knee, shoulder, ankle pain and post-surgical rehab",
-      icon: Activity,
-      id: "orthopedic"
-    },
-    {
-      title: "Neurological Physiotherapy",
-      description: "Stroke, spinal cord injury, vertigo, nerve injuries, Parkinsonism",
-      icon: Brain,
-      id: "neuro-physio"
-    },
-    {
-      title: "Cardio Pulmonary Rehabilitation",
-      description: "Post CABG, valve replacement, post–heart attack recovery and COPD",
-      icon: Heart,
-      id: "cardiac"
-    },
-    {
-      title: "Sports",
-      description: "Injury prevention exercises",
+      title: "Sports Physiotherapy",
+      intro: "Achieve peak performance with our tailored injury prevention and recovery programs.",
+      final: "We provide the elite care you need to stay active and reach your fitness goals.",
       icon: Move,
       id: "sports"
     },
     {
-      title: "Geriatric",
-      description: "Osteoporosis and Balance disorder",
+      title: "Geriatric Rehabilitation",
+      intro: "Enhance your mobility and independence through our specialized osteoporosis and balance programs.",
+      final: "We focus on proven techniques that ensure your safety and confidence in every step.",
       icon: Shield,
       id: "geriatric"
     },
     {
-      title: "Pain management",
-      description: "Specialized approach for patients dealing with chronic and acute pain conditions .",
+      title: "Pain Management",
+      intro: "Find sustainable relief from chronic and acute pain through our personalized treatment strategies.",
+      final: "We prioritize your comfort by restoring function and improving your daily quality of life.",
       icon: Activity,
       id: "pain-management"
     },
     {
-      title: "Pediatrics",
-      description: "Cerebral Palsy, Muscular Dystrophy, Autism",
+      title: "Pediatric Physiotherapy",
+      intro: "Supporting children with developmental milestones through compassionate and play-based therapeutic care.",
+      final: "Our specialized approach helps every child thrive by reaching their full physical potential.",
       icon: Baby,
       id: "pediatrics"
     },
@@ -218,10 +204,15 @@ export default function Home() {
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-semibold">{service.title}</h3>
-                    <p className="text-base text-muted-foreground leading-relaxed">
-                      {service.description}
-                    </p>
+                    <h3 className="text-xl font-bold">{service.title}</h3>
+                    <div className="space-y-2">
+                      <p className="text-base text-muted-foreground leading-relaxed">
+                        {service.intro}
+                      </p>
+                      <p className="text-base font-bold text-foreground leading-relaxed">
+                        {service.final}
+                      </p>
+                    </div>
                     <Link href="/services" data-testid={`link-service-${service.id}`}>
                       <button className="text-primary font-medium text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
                         Learn More

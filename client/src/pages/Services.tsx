@@ -15,92 +15,28 @@ import {
 export default function Services() {
   const services = [
     {
-      icon: Activity,
-      title: "Orthopedic Physiotherapy",
-      description: "Assessment and rehabilitation for musculoskeletal conditions and injuries.",
-      details: [
-        "Low Back Pain",
-        "Neck Pain",
-        "Shoulder Pain",
-        "Knee Pain",
-        "Ankle Pain",
-        "Post-Traumatic Rehabilitation",
-        "Post-Surgical Rehabilitation",
-        "Osteoarthritis",
-        "Ergonomic advice",
-        "ACL and Other Knee Ligament Injuries"
-      ]
-    },
-    {
-      icon: Brain,
-      title: "Neurological Physiotherapy",
-      description: "Specialized therapy for disorders affecting the brain, spinal cord, and nerves.",
-      details: [
-        "Stroke Management",
-        "Head & Spinal Cord Injury",
-        "Spinal disc Diseases",
-        "Vertigo Management",
-        "Peripheral Nerve Injuries",
-        "Parkinsonism and Other Movement Disorders",
-        "Facial Palsy"
-      ]
-    },
-    {
-      icon: HeartPulse,
-      title: "Cardio Pulmonary Rehabilitation",
-      description: "Structured programs to improve cardiovascular and respiratory health.",
-      details: [
-        "Post CABG",
-        "Post Valve Replacement",
-        "Post Heart Attack",
-        "Chronic obstructive pulmonary disease (COPD)",
-        "Bronchial Asthma"
-      ]
-    },
-    {
       icon: Move,
-      title: "Sports",
-      description: "Injury prevention exercises",
-      details: [
-        "Injury prevention exercises"
-      ]
+      title: "Sports Physiotherapy",
+      intro: "Achieve peak performance with our tailored injury prevention and recovery programs.",
+      final: "We provide the elite care you need to stay active and reach your fitness goals.",
     },
     {
       icon: Shield,
-      title: "Geriatric",
-      description: "Specialized care for the elderly.",
-      details: [
-        "Osteoporosis",
-        "Balance disorder"
-      ]
-    },
-    {
-      icon: Baby,
-      title: "Women's Health",
-      description: "Physiotherapy care tailored for women's specific health needs.",
-      details: [
-        "Pelvic Floor Rehabilitation",
-        "Antenatal and postnatal exercise program"
-      ]
+      title: "Geriatric Rehabilitation",
+      intro: "Enhance your mobility and independence through our specialized osteoporosis and balance programs.",
+      final: "We focus on proven techniques that ensure your safety and confidence in every step.",
     },
     {
       icon: Activity,
-      title: "Pain management",
-      description: "Specialized approach for patients dealing with chronic and acute pain conditions .",
-      details: [
-        "Specialized approach for patients dealing with chronic and acute pain conditions ."
-      ]
+      title: "Pain Management",
+      intro: "Find sustainable relief from chronic and acute pain through our personalized treatment strategies.",
+      final: "We prioritize your comfort by restoring function and improving your daily quality of life.",
     },
     {
       icon: Baby,
-      title: "Pediatrics",
-      description: "Specialized physiotherapy care for children.",
-      details: [
-        "Cerebral Palsy",
-        "Muscular Dystrophy",
-        "Autism",
-        "Juvenile rheumatoid arthritis"
-      ]
+      title: "Pediatric Physiotherapy",
+      intro: "Supporting children with developmental milestones through compassionate and play-based therapeutic care.",
+      final: "Our specialized approach helps every child thrive by reaching their full physical potential.",
     },
   ];
 
@@ -132,26 +68,17 @@ export default function Services() {
                       <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <Icon className="w-7 h-7 text-primary" />
                       </div>
-                      <div className="space-y-2 flex-1">
-                        <h3 className="text-xl md:text-2xl font-semibold">{service.title}</h3>
-                        <p className="text-base text-muted-foreground leading-relaxed">
-                          {service.description}
-                        </p>
+                      <div className="space-y-4 flex-1">
+                        <h3 className="text-xl md:text-2xl font-bold font-serif">{service.title}</h3>
+                        <div className="space-y-2">
+                          <p className="text-base text-muted-foreground leading-relaxed">
+                            {service.intro}
+                          </p>
+                          <p className="text-base font-bold text-foreground leading-relaxed">
+                            {service.final}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-
-                    <div className="space-y-2 pl-0 md:pl-18">
-                      <h4 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground">
-                        What We Offer:
-                      </h4>
-                      <ul className="space-y-2">
-                        {service.details.map((detail, detailIndex) => (
-                          <li key={detailIndex} className="flex items-start gap-2">
-                            <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                            <span className="text-sm text-muted-foreground">{detail}</span>
-                          </li>
-                        ))}
-                      </ul>
                     </div>
                   </CardContent>
                 </Card>

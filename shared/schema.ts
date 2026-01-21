@@ -40,51 +40,27 @@ export type Contact = z.infer<typeof contactSchema>;
 // Services data
 export const servicesData = [
   {
-    id: "orthopedic",
-    title: "Orthopedic Physiotherapy",
-    description: "Assessment and rehabilitation for musculoskeletal conditions and injuries.",
-    icon: "activity",
-  },
-  {
-    id: "neurological",
-    title: "Neurological Physiotherapy",
-    description: "Specialized therapy for disorders affecting the brain, spinal cord, and nerves.",
-    icon: "brain",
-  },
-  {
-    id: "cardio-pulmonary",
-    title: "Cardio Pulmonary Rehabilitation",
-    description: "Structured programs to improve cardiovascular and respiratory health.",
-    icon: "heart-pulse",
-  },
-  {
-    id: "sports",
-    title: "Sports",
-    description: "Injury prevention exercises",
+    id: "sports-physiotherapy",
+    title: "Sports Physiotherapy",
+    description: "Achieve peak performance with our tailored injury prevention and recovery programs. We provide the elite care you need to stay active and reach your fitness goals.",
     icon: "move",
   },
   {
-    id: "geriatric",
-    title: "Geriatric",
-    description: "Osteoporosis and Balance disorder",
+    id: "geriatric-rehabilitation",
+    title: "Geriatric Rehabilitation",
+    description: "Enhance your mobility and independence through our specialized osteoporosis and balance programs. We focus on proven techniques that ensure your safety and confidence in every step.",
     icon: "shield",
   },
   {
     id: "pain-management",
     title: "Pain Management",
-    description: "Specialized approach for patients dealing with chronic and acute pain conditions.",
+    description: "Find sustainable relief from chronic and acute pain through our personalized treatment strategies. We prioritize your comfort by restoring function and improving your daily quality of life.",
     icon: "activity",
   },
   {
-    id: "pediatrics",
-    title: "Pediatrics",
-    description: "Specialized care for children (Cerebral Palsy, Autism, etc.).",
-    icon: "baby",
-  },
-  {
-    id: "womens-health",
-    title: "Women's Health",
-    description: "Physiotherapy care tailored for women's specific health needs.",
+    id: "pediatric-physiotherapy",
+    title: "Pediatric Physiotherapy",
+    description: "Supporting children with developmental milestones through compassionate and play-based therapeutic care. Our specialized approach helps every child thrive by reaching their full physical potential.",
     icon: "baby",
   },
 ] as const;

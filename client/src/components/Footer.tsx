@@ -15,11 +15,10 @@ export function Footer() {
   ];
 
   const topServices = [
-    "Orthopedic Care",
-    "Sports Injury Rehab",
-    "Geriatric Physiotherapy",
+    "Sports Physiotherapy",
+    "Geriatric Rehabilitation",
     "Pain Management",
-    "Pediatrics",
+    "Pediatric Physiotherapy",
   ];
 
   return (
