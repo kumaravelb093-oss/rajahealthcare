@@ -59,16 +59,16 @@ export default function Services() {
     },
     {
       icon: Move,
-      title: "Sports Injury Rehabilitation",
-      description: "Return to sport safely with targeted rehab for acute and chronic injuries.",
+      title: "Sports",
+      description: "Injury prevention exercises",
       details: [
         "Injury prevention exercises"
       ]
     },
     {
       icon: Shield,
-      title: "Geriatric Physiotherapy",
-      description: "Holistic care to improve function and quality of life in older adults.",
+      title: "Geriatric",
+      description: "Specialized care for the elderly.",
       details: [
         "Osteoporosis",
         "Balance disorder"
@@ -85,18 +85,16 @@ export default function Services() {
     },
     {
       icon: Activity,
-      title: "Pain Management",
-      description: "Specialized approach for patients dealing with chronic and acute pain conditions.",
+      title: "Pain management",
+      description: "Specialized approach for patients dealing with chronic and acute pain conditions .",
       details: [
-        "Chronic Pain Management",
-        "Acute Pain Relief",
-        "Evidence-based Techniques"
+        "Specialized approach for patients dealing with chronic and acute pain conditions ."
       ]
     },
     {
       icon: Baby,
       title: "Pediatrics",
-      description: "Specialized physiotherapy care for children with developmental and physical conditions.",
+      description: "Specialized physiotherapy care for children.",
       details: [
         "Cerebral Palsy",
         "Muscular Dystrophy",

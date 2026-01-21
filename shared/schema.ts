@@ -58,15 +58,15 @@ export const servicesData = [
     icon: "heart-pulse",
   },
   {
-    id: "sports-injury",
-    title: "Sports Injury Rehab",
-    description: "Injury prevention exercises and sports recovery.",
+    id: "sports",
+    title: "Sports",
+    description: "Injury prevention exercises",
     icon: "move",
   },
   {
     id: "geriatric",
-    title: "Geriatric Physiotherapy",
-    description: "Osteoporosis and Balance disorder management.",
+    title: "Geriatric",
+    description: "Osteoporosis and Balance disorder",
     icon: "shield",
   },
   {

@@ -50,20 +50,20 @@ export default function Home() {
       id: "cardiac"
     },
     {
-      title: "Sports Injury Rehab",
+      title: "Sports",
       description: "Injury prevention exercises",
       icon: Move,
       id: "sports"
     },
     {
-      title: "Geriatric Physiotherapy",
+      title: "Geriatric",
       description: "Osteoporosis and Balance disorder",
       icon: Shield,
       id: "geriatric"
     },
     {
-      title: "Pain Management",
-      description: "Specialized approach for chronic and acute pain conditions",
+      title: "Pain management",
+      description: "Specialized approach for patients dealing with chronic and acute pain conditions .",
       icon: Activity,
       id: "pain-management"
     },
