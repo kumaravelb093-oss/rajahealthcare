@@ -123,14 +123,14 @@ export default function BookAppointment() {
                     </ul>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button 
+                    <Button
                       onClick={() => setIsSubmitted(false)}
                       variant="outline"
                       data-testid="button-book-another"
                     >
                       Book Another Appointment
                     </Button>
-                    <Button 
+                    <Button
                       onClick={() => window.location.href = "/"}
                       data-testid="button-home"
                     >
@@ -237,8 +237,8 @@ export default function BookAppointment() {
                               </SelectTrigger>
                               <SelectContent>
                                 <SelectItem value="morning">Morning (9:00 AM - 12:00 PM)</SelectItem>
-                                <SelectItem value="afternoon">Afternoon (12:00 PM - 3:00 PM)</SelectItem>
-                                <SelectItem value="evening">Evening (3:00 PM - 6:00 PM)</SelectItem>
+                                <SelectItem value="afternoon">Afternoon (12:00 PM - 4:00 PM)</SelectItem>
+                                <SelectItem value="evening">Evening (4:00 PM - 9:00 PM)</SelectItem>
                               </SelectContent>
                             </Select>
                           )}
@@ -348,16 +348,8 @@ export default function BookAppointment() {
                   </h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Monday - Friday:</span>
-                      <span className="font-medium">9:00 AM - 6:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Saturday:</span>
-                      <span className="font-medium">9:00 AM - 1:00 PM</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Sunday:</span>
-                      <span className="font-medium">Closed</span>
+                      <span className="text-muted-foreground">Monday - Sunday:</span>
+                      <span className="font-medium">9:00 AM - 9:00 PM</span>
                     </div>
                   </div>
                 </CardContent>

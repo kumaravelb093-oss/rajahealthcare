@@ -350,7 +350,7 @@ export default function Home() {
               <Clock className="w-10 h-10 text-primary flex-shrink-0" />
               <div>
                 <div className="font-semibold text-lg">Clinic Hours</div>
-                <div className="text-sm text-muted-foreground">Mon-Fri: 9AM-6PM | Sat: 9AM-1PM | Sun: Closed</div>
+                <div className="text-sm text-muted-foreground">Mon-Sun: 9:00 AM - 9:00 PM</div>
               </div>
             </div>
             <div className="flex items-center gap-4">

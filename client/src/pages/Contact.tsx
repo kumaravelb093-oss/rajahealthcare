@@ -9,10 +9,10 @@ import { apiRequest } from "@/lib/queryClient";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { contactSchema, type Contact } from "@shared/schema";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
+import {
+  Phone,
+  Mail,
+  MapPin,
   Clock,
   MessageSquare,
   Send
@@ -86,9 +86,7 @@ export default function ContactPage() {
   ];
 
   const clinicHours = [
-    { day: "Monday - Friday", hours: "9:00 AM - 6:00 PM" },
-    { day: "Saturday", hours: "9:00 AM - 1:00 PM" },
-    { day: "Sunday", hours: "Closed" },
+    { day: "Monday - Sunday", hours: "9:00 AM - 9:00 PM" },
   ];
 
   return (
@@ -100,7 +98,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            We are here to help you with all your neurological concerns. Please feel free to 
+            We are here to help you with all your neurological concerns. Please feel free to
             contact us to schedule an appointment or to learn more about our services.
           </p>
         </div>
@@ -115,7 +113,7 @@ export default function ContactPage() {
               <Card>
                 <CardContent className="p-8">
                   <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6">Send Us a Message</h2>
-                  
+
                   {isSubmitted ? (
                     <div className="py-12 text-center space-y-4" data-testid="success-message">
                       <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
@@ -125,7 +123,7 @@ export default function ContactPage() {
                       <p className="text-muted-foreground">
                         Thank you for contacting us. We'll respond within 24-48 hours.
                       </p>
-                      <Button 
+                      <Button
                         onClick={() => setIsSubmitted(false)}
                         variant="outline"
                         data-testid="button-send-another"
@@ -233,7 +231,7 @@ export default function ContactPage() {
               {/* Contact Details */}
               <div className="space-y-6">
                 <h2 className="text-2xl md:text-3xl font-bold font-serif">Contact Information</h2>
-                
+
                 <div className="space-y-4">
                   {contactInfo.map((info, index) => {
                     const Icon = info.icon;
@@ -249,8 +247,8 @@ export default function ContactPage() {
                                 {info.label}
                               </div>
                               {info.link ? (
-                                <a 
-                                  href={info.link} 
+                                <a
+                                  href={info.link}
                                   className="text-base hover:text-primary transition-colors"
                                   data-testid={`link-${info.label.toLowerCase()}`}
                                 >
@@ -281,8 +279,8 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-3">
                     {clinicHours.map((schedule, index) => (
-                      <div 
-                        key={index} 
+                      <div
+                        key={index}
                         className="flex justify-between py-2 border-b last:border-0"
                         data-testid={`schedule-${index}`}
                       >
@@ -300,7 +298,7 @@ export default function ContactPage() {
                   <h3 className="text-xl font-semibold mb-4">Directions & Parking</h3>
                   <div className="space-y-3 text-sm text-muted-foreground">
                     <p>
-                      Our clinic is conveniently located in Arisipalayam, Salem, with easy access 
+                      Our clinic is conveniently located in Arisipalayam, Salem, with easy access
                       from major roads.
                     </p>
                     <p>
