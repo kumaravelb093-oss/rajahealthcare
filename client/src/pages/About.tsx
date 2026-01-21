@@ -31,7 +31,7 @@ export default function About() {
     { year: "2012", event: "Expanded to Advanced Diagnostic Facilities" },
     { year: "2015", event: "Reached 2000+ Patients Treated" },
     { year: "2020", event: "Introduced Telemedicine Services" },
-    { year: "2023", event: "Celebrated 15 Years of Excellence" },
+    { year: "2023", event: "Celebrated 5 Years of Excellence" },
   ];
 
   return (

@@ -24,7 +24,7 @@ import doctorImage from "@/assets/doctor.jpg";
 
 export default function Home() {
   const stats = [
-    { number: "15+", label: "Years Experience", icon: Award },
+    { number: "5+", label: "Years Experience", icon: Award },
     { number: "5000+", label: "Patients Treated", icon: Users },
     { number: "10+", label: "Specialized Services", icon: Activity },
     { number: "4.9/5", label: "Patient Rating", icon: Star },
@@ -72,7 +72,7 @@ export default function Home() {
   const whyChooseUs = [
     {
       title: "Expert Care",
-      description: "Led by Dr. Raja with over 15 years of specialized experience in neurology",
+      description: "Led by Dr. Raja with over 5 years of specialized experience in neurology",
       icon: Award,
     },
     {
@@ -132,8 +132,9 @@ export default function Home() {
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Welcome to RAJA Health Care Clinic, a dedicated health care center in the heart of Arisipalayam, Salem.
-                We are committed to providing exceptional, compassionate care for a wide range of health care needs.
+                Welcome to Raja Health Care Clinic, where we believe in a holistic approach to your health and well-being.
+                Our team of dedicated physiotherapists is committed to helping you overcome pain, recover from injury,
+                and achieve your maximum physical potential through personalized and evidence-based treatment plans.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
@@ -185,9 +186,9 @@ export default function Home() {
             Welcome to Excellence in Health Care
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Our clinic is equipped with state-of-the-art diagnostic facilities, and our expert team
-            is here to guide you on your path to recovery and well-being. We believe in empowering
-            our patients with knowledge and involving them in their own treatment plans.
+            Our patient-centered approach combines hands-on therapy, customized exercise programs,
+            and innovative techniques like manual lymphatic drainage and electrotherapy to stimulate
+            your body's natural healing mechanisms.
           </p>
         </div>
       </section>
@@ -276,9 +277,10 @@ export default function Home() {
                     <p className="text-xl text-primary font-semibold">M.D., D.M. (Neurology)</p>
                   </div>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Dr. Raja is a distinguished neurologist with over 15 years of experience in diagnosing
-                    and treating a wide spectrum of neurological disorders. He is dedicated to providing
-                    exceptional, personalized patient care.
+                    Dr. Raja is the driving force and clinical director behind Raja health care clinic,
+                    a practice founded on the principle that everyone deserves an active, pain-free life.
+                    With over 5 years of experience in physiotherapy department , he has dedicated his
+                    career to providing personalized, holistic care to the Patients.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Stroke Specialist</Badge>

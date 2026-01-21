@@ -36,7 +36,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Your Partner in Health Care Wellness. Providing exceptional, compassionate care for over 15 years.
+              Your Partner in Health Care Wellness. Providing exceptional, compassionate care for over 5 years.
             </p>
           </div>
 

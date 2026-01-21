@@ -66,7 +66,7 @@ export default function Doctor() {
                 </h1>
                 <p className="text-2xl text-primary font-semibold">M.D., D.M. (Neurology)</p>
                 <p className="text-lg text-muted-foreground">
-                  Distinguished Specialist | 15+ Years Experience
+                  Distinguished Specialist | 5+ Years Experience
                 </p>
               </div>
 
@@ -100,11 +100,9 @@ export default function Doctor() {
                   <h2 className="text-2xl md:text-3xl font-bold font-serif">A Message from Dr. Raja</h2>
                 </div>
                 <blockquote className="text-lg text-muted-foreground leading-relaxed italic border-l-4 border-primary/20 pl-6">
-                  "I believe in a holistic approach to health care, where I partner with my patients
-                  to understand their concerns and develop a personalized treatment plan that works for them.
-                  My goal is to not only treat the condition but also to improve the overall quality of life
-                  for my patients. I am passionate about staying at the forefront of rehabilitation science
-                  and bringing the latest advancements in treatment to my practice."
+                  "At Raja Health Care Clinic, we believe in a holistic approach to your health and well-being.
+                  Our team of dedicated physiotherapists is committed to helping you overcome pain, recover from injury,
+                  and achieve your maximum physical potential through personalized and evidence-based treatment plans."
                 </blockquote>
                 <div className="pt-4">
                   <p className="font-semibold">- Dr. Raja</p>
@@ -124,13 +122,10 @@ export default function Doctor() {
 
           <div className="space-y-6 max-w-3xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Dr. Raja has over 15 years of experience in diagnosing and treating complex conditions,
-              bringing a compassionate, patient-first approach to care.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              With extensive experience in managing complex conditions, Dr. Raja brings a wealth of knowledge
-              and expertise to every patient interaction. His commitment to continuous learning ensures that
-              his patients benefit from current, effective treatment approaches.
+              Dr. Raja is the driving force and clinical director behind Raja health care clinic,
+              a practice founded on the principle that everyone deserves an active, pain-free life.
+              With over 5 years of experience in physiotherapy department , he has dedicated his
+              career to providing personalized, holistic care to the Patients.
             </p>
           </div>
         </div>
