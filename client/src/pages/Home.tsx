@@ -273,7 +273,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="space-y-6">
                   <div className="space-y-2">
-                    <h2 className="text-3xl md:text-4xl font-bold font-serif">Meet Dr. Raja</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold font-serif">About Dr. Raja</h2>
                     <p className="text-xl text-primary font-semibold">M.D., D.M. (Neurology)</p>
                   </div>
                   <p className="text-base text-muted-foreground leading-relaxed">
@@ -284,7 +284,7 @@ export default function Home() {
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Stroke Specialist</Badge>
-                    <Badge variant="secondary">Epilepsy Expert</Badge>
+                    <Badge variant="secondary">Sports Injuries</Badge>
                     <Badge variant="secondary">Movement Disorders</Badge>
                   </div>
                   <Link href="/doctor" data-testid="link-doctor-profile">

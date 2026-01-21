@@ -15,11 +15,9 @@ import doctorImage from "@/assets/doctor.jpg";
 export default function Doctor() {
   const expertise = [
     "Stroke",
-    "Epilepsy",
+    "Sports injuries",
     "Movement Disorders",
-    "Headaches & Migraines",
     "Neuromuscular Disorders",
-    "Dementia Care",
   ];
 
   const qualifications = [
