@@ -53,12 +53,14 @@ export default function Services() {
     },
     {
       icon: HeartPulse,
-      title: "Cardiac Rehabilitation",
-      description: "Heart-focused rehabilitation following surgeries or cardiac events.",
+      title: "Cardio pulmonary rehabilitation",
+      description: "Heart and lung focused rehabilitation following surgeries or respiratory conditions.",
       points: [
         "Post CABG (Coronary Artery Bypass Grafting)",
         "Post Valve Replacement",
-        "Post Heart Attack"
+        "Post Heart Attack",
+        "Bronchial Asthma",
+        "Chronic obstructive pulmonary disease (COPD)"
       ],
       id: "cardio-pulmonary"
     },

@@ -150,12 +150,7 @@ export default function About() {
                     Comfortable consultation rooms ensuring privacy and patient comfort
                   </p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                  <p className="text-base text-muted-foreground">
-                    Modern waiting areas designed for a relaxing patient experience
-                  </p>
-                </div>
+
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                   <p className="text-base text-muted-foreground">

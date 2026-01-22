@@ -44,7 +44,7 @@ export default function Home() {
       id: "neuro-physio"
     },
     {
-      title: "Cardiac Rehabilitation",
+      title: "Cardio pulmonary rehabilitation",
       description: "Post CABG, valve replacement, post–heart attack recovery and COPD",
       icon: Heart,
       id: "cardiac"
