@@ -44,7 +44,7 @@ export default function Home() {
       id: "neuro-physio"
     },
     {
-      title: "Cardio Pulmonary Rehabilitation",
+      title: "Cardiac Rehabilitation",
       description: "Post CABG, valve replacement, post–heart attack recovery and COPD",
       icon: Heart,
       id: "cardiac"
@@ -62,10 +62,16 @@ export default function Home() {
       id: "geriatric"
     },
     {
-      title: "Pain Management",
+      title: "Pain Management & Functional Restoration",
       description: "Specialized approach for chronic and acute pain conditions",
       icon: Activity,
       id: "pain-management"
+    },
+    {
+      title: "Women's Health",
+      description: "Pelvic Floor Rehabilitation, Antenatal and postnatal exercise program",
+      icon: Heart,
+      id: "womens-health"
     },
     {
       title: "Pediatrics",
