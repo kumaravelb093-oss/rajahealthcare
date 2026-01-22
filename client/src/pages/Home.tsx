@@ -78,7 +78,7 @@ export default function Home() {
   const whyChooseUs = [
     {
       title: "Expert Care",
-      description: "Led by Dr. Raja with over 5 years of specialized experience in neurology",
+      description: "Led by Dr. Raja with over 5 years of specialized experience",
       icon: Award,
     },
     {
