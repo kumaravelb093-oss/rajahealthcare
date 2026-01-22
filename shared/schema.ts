@@ -40,27 +40,45 @@ export type Contact = z.infer<typeof contactSchema>;
 // Services data
 export const servicesData = [
   {
-    id: "sports-physiotherapy",
-    title: "Sports Physiotherapy",
-    description: "injury prevention and performance care. We provide the elite care you need to stay active and reach your fitness goals.",
+    id: "orthopedic",
+    title: "Orthopedic Physiotherapy",
+    description: "Low back, neck, knee, shoulder, ankle pain and post-surgical rehab",
+    icon: "activity",
+  },
+  {
+    id: "neurological",
+    title: "Neurological Physiotherapy",
+    description: "Stroke, spinal cord injury, vertigo, nerve injuries, Parkinsonism",
+    icon: "brain",
+  },
+  {
+    id: "cardio-pulmonary",
+    title: "Cardio Pulmonary Rehabilitation",
+    description: "Post CABG, valve replacement, post–heart attack recovery and COPD",
+    icon: "heart-pulse",
+  },
+  {
+    id: "sports-injury",
+    title: "Sports Injury Rehab",
+    description: "Injury prevention exercises",
     icon: "move",
   },
   {
-    id: "geriatric-rehabilitation",
-    title: "Geriatric Rehabilitation",
-    description: "osteoporosis and balance disorders. We focus on proven techniques that ensure your safety and confidence in every step.",
+    id: "geriatric",
+    title: "Geriatric Physiotherapy",
+    description: "Osteoporosis and Balance disorder",
     icon: "shield",
   },
   {
     id: "pain-management",
     title: "Pain Management",
-    description: "chronic and acute pain conditions. We prioritize your comfort by restoring function and improving your daily quality of life.",
+    description: "Specialized approach for chronic and acute pain conditions",
     icon: "activity",
   },
   {
-    id: "pediatric-physiotherapy",
-    title: "Pediatric Physiotherapy",
-    description: "cerebral palsy, muscular dystrophy, autism, juvenile rheumatoid arthritis. Our specialized approach helps every child thrive by reaching their full physical potential.",
+    id: "pediatrics",
+    title: "Pediatrics",
+    description: "Cerebral Palsy, Muscular Dystrophy, Autism",
     icon: "baby",
   },
 ] as const;

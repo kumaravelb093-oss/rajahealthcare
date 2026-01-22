@@ -15,28 +15,46 @@ import {
 export default function Services() {
   const services = [
     {
+      icon: Activity,
+      title: "Orthopedic Physiotherapy",
+      description: "Low back, neck, knee, shoulder, ankle pain and post-surgical rehab",
+      id: "orthopedic"
+    },
+    {
+      icon: Brain,
+      title: "Neurological Physiotherapy",
+      description: "Stroke, spinal cord injury, vertigo, nerve injuries, Parkinsonism",
+      id: "neurological"
+    },
+    {
+      icon: HeartPulse,
+      title: "Cardio Pulmonary Rehabilitation",
+      description: "Post CABG, valve replacement, post–heart attack recovery and COPD",
+      id: "cardio-pulmonary"
+    },
+    {
       icon: Move,
-      title: "Sports Physiotherapy",
-      intro: "injury prevention and performance care",
-      final: "We provide the elite care you need to stay active and reach your fitness goals.",
+      title: "Sports Injury Rehab",
+      description: "Injury prevention exercises",
+      id: "sports"
     },
     {
       icon: Shield,
-      title: "Geriatric Rehabilitation",
-      intro: "osteoporosis and balance disorders",
-      final: "We focus on proven techniques that ensure your safety and confidence in every step.",
+      title: "Geriatric Physiotherapy",
+      description: "Osteoporosis and Balance disorder",
+      id: "geriatric"
     },
     {
       icon: Activity,
       title: "Pain Management",
-      intro: "chronic and acute pain conditions",
-      final: "We prioritize your comfort by restoring function and improving your daily quality of life.",
+      description: "Specialized approach for chronic and acute pain conditions",
+      id: "pain-management"
     },
     {
       icon: Baby,
-      title: "Pediatric Physiotherapy",
-      intro: "cerebral palsy, muscular dystrophy, autism, juvenile rheumatoid arthritis",
-      final: "Our specialized approach helps every child thrive by reaching their full physical potential.",
+      title: "Pediatrics",
+      description: "Cerebral Palsy, Muscular Dystrophy, Autism",
+      id: "pediatrics"
     },
   ];
 
@@ -70,14 +88,9 @@ export default function Services() {
                       </div>
                       <div className="space-y-4 flex-1">
                         <h3 className="text-xl md:text-2xl font-bold font-serif">{service.title}</h3>
-                        <div className="space-y-2">
-                          <p className="text-base text-muted-foreground leading-relaxed">
-                            {service.intro}
-                          </p>
-                          <p className="text-base font-bold text-foreground leading-relaxed">
-                            {service.final}
-                          </p>
-                        </div>
+                        <p className="text-base text-muted-foreground leading-relaxed">
+                          {service.description}
+                        </p>
                       </div>
                     </div>
                   </CardContent>

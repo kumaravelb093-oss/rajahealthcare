@@ -32,30 +32,44 @@ export default function Home() {
 
   const services = [
     {
-      title: "Sports Physiotherapy",
-      intro: "injury prevention and performance care",
-      final: "We provide the elite care you need to stay active and reach your fitness goals.",
+      title: "Orthopedic Physiotherapy",
+      description: "Low back, neck, knee, shoulder, ankle pain and post-surgical rehab",
+      icon: Activity,
+      id: "orthopedic"
+    },
+    {
+      title: "Neurological Physiotherapy",
+      description: "Stroke, spinal cord injury, vertigo, nerve injuries, Parkinsonism",
+      icon: Brain,
+      id: "neuro-physio"
+    },
+    {
+      title: "Cardio Pulmonary Rehabilitation",
+      description: "Post CABG, valve replacement, post–heart attack recovery and COPD",
+      icon: Heart,
+      id: "cardiac"
+    },
+    {
+      title: "Sports Injury Rehab",
+      description: "Injury prevention exercises",
       icon: Move,
       id: "sports"
     },
     {
-      title: "Geriatric Rehabilitation",
-      intro: "osteoporosis and balance disorders",
-      final: "We focus on proven techniques that ensure your safety and confidence in every step.",
+      title: "Geriatric Physiotherapy",
+      description: "Osteoporosis and Balance disorder",
       icon: Shield,
       id: "geriatric"
     },
     {
       title: "Pain Management",
-      intro: "chronic and acute pain conditions",
-      final: "We prioritize your comfort by restoring function and improving your daily quality of life.",
+      description: "Specialized approach for chronic and acute pain conditions",
       icon: Activity,
       id: "pain-management"
     },
     {
-      title: "Pediatric Physiotherapy",
-      intro: "cerebral palsy, muscular dystrophy, autism, juvenile rheumatoid arthritis",
-      final: "Our specialized approach helps every child thrive by reaching their full physical potential.",
+      title: "Pediatrics",
+      description: "Cerebral Palsy, Muscular Dystrophy, Autism",
       icon: Baby,
       id: "pediatrics"
     },
@@ -205,14 +219,9 @@ export default function Home() {
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
                     <h3 className="text-xl font-bold">{service.title}</h3>
-                    <div className="space-y-2">
-                      <p className="text-base text-muted-foreground leading-relaxed">
-                        {service.intro}
-                      </p>
-                      <p className="text-base font-bold text-foreground leading-relaxed">
-                        {service.final}
-                      </p>
-                    </div>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      {service.description}
+                    </p>
                     <Link href="/services" data-testid={`link-service-${service.id}`}>
                       <button className="text-primary font-medium text-sm flex items-center gap-2 group-hover:gap-3 transition-all">
                         Learn More
