@@ -52,8 +52,8 @@ export const servicesData = [
     icon: "brain",
   },
   {
-    id: "cardio-pulmonary",
-    title: "Cardio Pulmonary Rehabilitation",
+    id: "cardiac",
+    title: "Cardiac Rehabilitation",
     description: "Post CABG, valve replacement, post–heart attack recovery and COPD",
     icon: "heart-pulse",
   },
@@ -80,5 +80,11 @@ export const servicesData = [
     title: "Pediatrics",
     description: "Cerebral Palsy, Muscular Dystrophy, Autism",
     icon: "baby",
+  },
+  {
+    id: "womens-health",
+    title: "Women's Health",
+    description: "Pelvic Floor Rehabilitation, Antenatal and postnatal exercise program",
+    icon: "heart",
   },
 ] as const;

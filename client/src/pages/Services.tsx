@@ -9,7 +9,11 @@ import {
   Baby,
   Shield,
   HeartPulse,
-  Stethoscope
+  Heart,
+  Stethoscope,
+  Target,
+  CheckCircle2,
+  Users
 } from "lucide-react";
 
 export default function Services() {
@@ -17,45 +21,125 @@ export default function Services() {
     {
       icon: Activity,
       title: "Orthopedic Physiotherapy",
-      description: "Low back, neck, knee, shoulder, ankle pain and post-surgical rehab",
+      description: "Comprehensive care for musculoskeletal conditions and post-surgical recovery.",
+      points: [
+        "Low Back Pain",
+        "Neck Pain",
+        "Shoulder Pain",
+        "Knee Pain",
+        "Ankle Pain",
+        "Post-Traumatic Rehabilitation",
+        "Post-Surgical Rehabilitation",
+        "Osteoarthritis",
+        "Ergonomic advice",
+        "ACL and Other Knee Ligament Injuries"
+      ],
       id: "orthopedic"
     },
     {
       icon: Brain,
       title: "Neurological Physiotherapy",
-      description: "Stroke, spinal cord injury, vertigo, nerve injuries, Parkinsonism",
+      description: "Specialized rehabilitation for neurological disorders and nervous system injuries.",
+      points: [
+        "Stroke Management",
+        "Head & Spinal Cord Injury",
+        "Spinal disc Diseases",
+        "Vertigo Management",
+        "Peripheral Nerve Injuries",
+        "Parkinsonism and Other Movement Disorders",
+        "Facial Palsy"
+      ],
       id: "neurological"
     },
     {
       icon: HeartPulse,
-      title: "Cardio Pulmonary Rehabilitation",
-      description: "Post CABG, valve replacement, post–heart attack recovery and COPD",
+      title: "Cardiac Rehabilitation",
+      description: "Heart-focused rehabilitation following surgeries or cardiac events.",
+      points: [
+        "Post CABG (Coronary Artery Bypass Grafting)",
+        "Post Valve Replacement",
+        "Post Heart Attack"
+      ],
       id: "cardio-pulmonary"
     },
     {
       icon: Move,
       title: "Sports Injury Rehab",
-      description: "Injury prevention exercises",
+      description: "Advanced recovery programs for athletes to ensure safe return to performance.",
+      points: [
+        "Throwing Injuries (Shoulder & Elbow)",
+        "Ankle Injuries",
+        "Acute Muscle Strains",
+        "Ligament Sprains",
+        "Chronic Overuse Tendon Injuries",
+        "Joint Instability"
+      ],
       id: "sports"
     },
     {
       icon: Shield,
       title: "Geriatric Physiotherapy",
-      description: "Osteoporosis and Balance disorder",
+      description: "Physiotherapy for the geriatric population to improve the quality of life.",
+      points: [
+        "Our Geriatric physiotherapists utilize a holistic approach, combining exercises, manual therapy, and other therapeutic techniques to address age-related conditions.",
+        "Treatment plans are tailored to individual needs to help adults regain and maintain their physical abilities."
+      ],
       id: "geriatric"
     },
     {
+      icon: Heart,
+      title: "Women's Health",
+      description: "Dedicated care for women through different life stages.",
+      points: [
+        "Pelvic Floor Rehabilitation",
+        "Antenatal and postnatal exercise program"
+      ],
+      id: "womens-health"
+    },
+    {
       icon: Activity,
-      title: "Pain Management",
-      description: "Specialized approach for chronic and acute pain conditions",
+      title: "Pain Management & Functional Restoration",
+      description: "Specialized non-surgical interventions for complex pain conditions.",
+      points: [
+        "Specialized interventions for chronic pain",
+        "Post-stroke complications and spinal cord injuries",
+        "Musculoskeletal disorders management",
+        "Goal of restoring movement and reducing discomfort"
+      ],
       id: "pain-management"
     },
     {
       icon: Baby,
       title: "Pediatrics",
-      description: "Cerebral Palsy, Muscular Dystrophy, Autism",
+      description: "Specialized physiotherapy care for children.",
+      points: [
+        "Cerebral Palsy",
+        "Muscular Dystrophy",
+        "Autism",
+        "Developmental delays"
+      ],
       id: "pediatrics"
     },
+  ];
+
+  const approach = [
+    {
+      title: "Personalized Therapy Plans",
+      description: "Customized rehabilitation programs designed to address neurological, orthopedic, and post-surgical recovery needs for maximum functional restoration.",
+      icon: Target
+    },
+    {
+      title: "Pain Management & Functional Restoration",
+      description: "Specialized non-surgical interventions for chronic pain, post-stroke complications, spinal cord injuries, and musculoskeletal disorders to restore movement and reduce discomfort.",
+      icon: Activity
+    }
+  ];
+
+  const goals = [
+    "Managing acute and chronic conditions.",
+    "Rehabilitating injuries and the effects of diseases and disabilities.",
+    "Improving and maintaining optimal physical performance and overall quality of life.",
+    "Educating patients to prevent reoccurrence of any injuries."
   ];
 
   return (
@@ -88,9 +172,17 @@ export default function Services() {
                       </div>
                       <div className="space-y-4 flex-1">
                         <h3 className="text-xl md:text-2xl font-bold font-serif">{service.title}</h3>
-                        <p className="text-base text-muted-foreground leading-relaxed">
+                        <p className="text-base font-medium text-foreground/80">
                           {service.description}
                         </p>
+                        <ul className="space-y-2">
+                          {service.points.map((point, i) => (
+                            <li key={i} className="flex items-start gap-2 text-base text-muted-foreground">
+                              <CheckCircle2 className="w-5 h-5 text-primary/60 mt-0.5 flex-shrink-0" />
+                              <span>{point}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
                   </CardContent>
@@ -98,6 +190,65 @@ export default function Services() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* Our Approach Section */}
+      <section className="py-20 md:py-24 bg-accent/20">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold font-serif">How We Heal</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Our clinic utilizes advanced therapeutic strategies for lasting recovery.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            {approach.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <Card key={index} className="border-primary/20">
+                  <CardContent className="p-8 flex gap-6">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-8 h-8 text-primary" />
+                    </div>
+                    <div className="space-y-3">
+                      <h3 className="text-2xl font-bold font-serif">{item.title}</h3>
+                      <p className="text-base text-muted-foreground leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Ultimate Goal Section */}
+      <section className="py-20 md:py-24">
+        <div className="max-w-5xl mx-auto px-6 md:px-8">
+          <Card className="bg-primary text-primary-foreground overflow-hidden">
+            <CardContent className="p-12 md:p-16 space-y-8 relative">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl md:text-5xl font-bold font-serif">Ultimate Goal of Our Clinic</h2>
+                <div className="w-24 h-1 bg-primary-foreground/30 mx-auto"></div>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-6">
+                {goals.map((goal, index) => (
+                  <div key={index} className="flex gap-4 p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 group hover:bg-white/20 transition-all">
+                    <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                      <span className="font-bold text-lg">{index + 1}</span>
+                    </div>
+                    <p className="text-lg font-medium leading-tight pt-1">
+                      {goal}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
