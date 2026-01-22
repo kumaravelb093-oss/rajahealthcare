@@ -60,9 +60,8 @@ export default function About() {
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold font-serif">Our Mission</h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  To provide the highest quality health care with a patient-centered approach.
-                  We believe in empowering our patients with knowledge and involving them in their
-                  own treatment plans.
+                  To provide exceptional, evidence-based care with professionalism and compassion,
+                  restoring movement and quality of life through personalized treatment plans.
                 </p>
               </CardContent>
             </Card>
@@ -74,8 +73,8 @@ export default function About() {
                 </div>
                 <h2 className="text-2xl md:text-3xl font-semibold font-serif">Our Vision</h2>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  To be the leading health care clinic in the region, recognized for our clinical
-                  excellence, compassionate care, and commitment to innovation in rehabilitation.
+                  To be the most trusted physical therapy clinic dedicated to enhancing quality of life
+                  and promoting lifelong wellness for our community.
                 </p>
               </CardContent>
             </Card>
