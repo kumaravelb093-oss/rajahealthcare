@@ -17,8 +17,9 @@ export function Footer() {
   const topServices = [
     "Orthopedic Physiotherapy",
     "Neurological Physiotherapy",
-    "Cardio Pulmonary Rehabilitation",
+    "Cardiac Rehabilitation",
     "Sports Injury Rehab",
+    "Women's Health",
     "Pain Management",
   ];
 
