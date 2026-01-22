@@ -87,4 +87,10 @@ export const servicesData = [
     description: "Pelvic Floor Rehabilitation, Antenatal and postnatal exercise program",
     icon: "heart",
   },
+  {
+    id: "home-session",
+    title: "Home Physiotherapy Session",
+    description: "Professional care at your home doorstep",
+    icon: "home",
+  },
 ] as const;

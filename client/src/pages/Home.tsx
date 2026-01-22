@@ -135,9 +135,15 @@ export default function Home() {
 
             <div className="max-w-3xl space-y-6">
               <div className="space-y-4">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-serif leading-tight" data-testid="text-hero-headline">
-                  Leading Health Care in Salem
-                </h1>
+                <div className="flex flex-col items-center gap-4">
+                  <Badge variant="secondary" className="px-4 py-1.5 text-sm font-semibold bg-primary/10 text-primary border-primary/20 animate-pulse">
+                    <Clock className="w-4 h-4 mr-2" />
+                    Home Visits Available
+                  </Badge>
+                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-serif leading-tight" data-testid="text-hero-headline">
+                    Leading Health Care in Salem
+                  </h1>
+                </div>
                 <p className="text-xl md:text-2xl text-muted-foreground">
                   Your Partner in Health Care Wellness
                 </p>
@@ -248,6 +254,82 @@ export default function Home() {
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Home Sessions Feature Section */}
+      <section className="py-20 md:py-24 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <Card className="bg-gradient-to-r from-primary to-primary/90 text-white border-none shadow-2xl relative overflow-hidden">
+            {/* Background Decoration */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent/20 rounded-full -translate-x-1/2 translate-y-1/2 blur-3xl pointer-events-none"></div>
+
+            <CardContent className="p-8 md:p-16 relative z-10">
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="space-y-8">
+                  <div className="space-y-4">
+                    <Badge variant="outline" className="text-white border-white/30 px-3 py-1">New Service</Badge>
+                    <h2 className="text-3xl md:text-5xl font-bold font-serif leading-tight">
+                      Physiotherapy Sessions Available at home
+                    </h2>
+                    <p className="text-xl text-white/90 leading-relaxed max-w-xl">
+                      Experience professional, expert care in the comfort and privacy of your own home.
+                      Our dedicated team brings the same high-quality clinical expertise directly to your doorstep.
+                    </p>
+                  </div>
+
+                  <div className="grid sm:grid-cols-2 gap-6">
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
+                        <Moon className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <div className="font-bold">Maximum Comfort</div>
+                        <div className="text-white/70 text-sm">Treat in your own environment</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
+                        <Zap className="w-5 h-5 text-white" />
+                      </div>
+                      <div>
+                        <div className="font-bold">Flexible Scheduling</div>
+                        <div className="text-white/70 text-sm">Sessions that fit your routine</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                    <Link href="/book-appointment">
+                      <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-xl w-full sm:w-auto">
+                        Book Home Visit
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Button>
+                    </Link>
+                    <Link href="/contact">
+                      <Button size="lg" variant="outline" className="text-white border-white/30 hover:bg-white/10 w-full sm:w-auto">
+                        Inquire Now
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="relative group lg:block hidden">
+                  <div className="absolute -inset-4 bg-gradient-to-tr from-white/20 to-transparent rounded-3xl blur opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+                  <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl bg-white/5 backdrop-blur-sm border border-white/20 flex items-center justify-center p-8">
+                    <div className="text-center space-y-4">
+                      <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-6">
+                        <Activity className="w-10 h-10 text-white" />
+                      </div>
+                      <div className="text-2xl font-bold font-serif">Home Physiotherapy Sessions</div>
+                      <div className="text-white/60">Expert rehabilitation brought to you</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
