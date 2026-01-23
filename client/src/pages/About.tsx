@@ -27,11 +27,11 @@ export default function About() {
   ];
 
   const milestones = [
-    { year: "2008", event: "Clinic Established in Arisipalayam, Salem" },
-    { year: "2012", event: "Expanded to Advanced Diagnostic Facilities" },
-    { year: "2015", event: "Reached 2000+ Patients Treated" },
-    { year: "2020", event: "Introduced Telemedicine Services" },
-    { year: "2023", event: "Celebrated 5 Years of Excellence" },
+    { year: "2021", event: "Clinic Established in Arisipalayam, Salem" },
+    { year: "2022", event: "Expanded with Evidence-Based Treatment Protocols" },
+    { year: "2023", event: "Reached 500+ Patients Treated" },
+    { year: "2024", event: "Reached 1000+ Patients Treated & Advanced Services" },
+    { year: "2025", event: "Celebrated 5 Years of Clinical Excellence" },
   ];
 
   return (
