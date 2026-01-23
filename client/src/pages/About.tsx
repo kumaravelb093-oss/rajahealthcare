@@ -175,33 +175,59 @@ export default function About() {
       </section>
 
       {/* Timeline/Milestones */}
-      <section className="py-20 md:py-24">
-        <div className="max-w-4xl mx-auto px-6 md:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold font-serif text-center mb-12">
-            Our Journey
-          </h2>
+      <section className="py-24 md:py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className="text-center space-y-4 mb-20">
+            <h2 className="text-4xl md:text-5xl font-bold font-serif">Our Journey</h2>
+            <div className="w-24 h-1 bg-primary/20 mx-auto"></div>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto italic">
+              A commitment to excellence, one patient at a time.
+            </p>
+          </div>
 
-          <div className="space-y-8">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="flex gap-6 group" data-testid={`milestone-${index}`}>
-                <div className="flex-shrink-0 text-right w-20">
-                  <div className="text-2xl font-bold text-primary">{milestone.year}</div>
+          <div className="relative">
+            {/* Centered Line - Hidden on small screens, absolute on larger */}
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-primary/30 to-transparent -translate-x-1/2 rounded-full"></div>
+
+            <div className="space-y-12 md:space-y-24">
+              {milestones.map((milestone, index) => (
+                <div
+                  key={index}
+                  className={`flex flex-col md:flex-row items-center gap-8 md:gap-0 ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+                    }`}
+                  data-testid={`milestone-${index}`}
+                >
+                  {/* Content Card Area */}
+                  <div className="w-full md:w-1/2 flex justify-center px-0 md:px-12">
+                    <Card className="w-full hover-elevate transition-all duration-500 border-primary/5 hover:border-primary/20 group overflow-hidden bg-card/50 backdrop-blur-sm">
+                      <CardContent className="p-8 space-y-4 relative">
+                        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full translate-x-1/2 -translate-y-1/2 group-hover:bg-primary/10 transition-colors"></div>
+                        <div className="md:hidden text-3xl font-bold text-primary mb-2">{milestone.year}</div>
+                        <p className="text-lg font-medium leading-relaxed relative z-10">{milestone.event}</p>
+                      </CardContent>
+                    </Card>
+                  </div>
+
+                  {/* Year Marker Area */}
+                  <div className="relative flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-full bg-background border-4 border-primary/10 flex items-center justify-center shadow-xl z-10 hover:border-primary/40 transition-colors duration-500">
+                      <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm shadow-lg">
+                        <span className="md:hidden">✓</span>
+                        <div className="hidden md:block">{(index + 1).toString().padStart(2, '0')}</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Year Text for alternating layout */}
+                  <div className="hidden md:block w-1/2 px-12">
+                    <div className={`text-6xl font-black opacity-5 font-serif select-none ${index % 2 === 0 ? "text-left" : "text-right"
+                      }`}>
+                      {milestone.year}
+                    </div>
+                  </div>
                 </div>
-                <div className="flex-shrink-0 relative">
-                  <div className="w-4 h-4 rounded-full bg-primary mt-2"></div>
-                  {index !== milestones.length - 1 && (
-                    <div className="absolute top-6 left-1/2 -translate-x-1/2 w-0.5 h-full bg-border"></div>
-                  )}
-                </div>
-                <div className="flex-1 pb-8">
-                  <Card className="hover-elevate transition-all duration-300">
-                    <CardContent className="p-6">
-                      <p className="text-base font-medium">{milestone.event}</p>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
