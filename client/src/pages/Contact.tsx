@@ -64,6 +64,7 @@ export default function ContactPage() {
       icon: MapPin,
       label: "Address",
       value: ["RAJA Health Care Clinic", "Arisipalayam", "Salem, Tamil Nadu"],
+      link: "https://www.google.com/maps/search/?api=1&query=RAJA+Health+Care+Clinic+Arisipalayam+Salem+Tamil+Nadu",
     },
     {
       icon: Phone,
@@ -320,15 +321,21 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <Card>
             <CardContent className="p-8 md:p-12 text-center">
-              <MapPin className="w-16 h-16 mx-auto text-primary mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Find Us on the Map</h3>
-              <p className="text-muted-foreground mb-6">
-                RAJA Health Care Clinic, Arisipalayam, Salem, Tamil Nadu
-              </p>
-              <p className="text-sm text-muted-foreground">
-                {/* Map integration can be added here */}
-                Contact us for detailed directions to our clinic
-              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=RAJA+Health+Care+Clinic+Arisipalayam+Salem+Tamil+Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-block"
+              >
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <MapPin className="w-8 h-8 text-primary group-hover:text-white" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">Find Us on the Map</h3>
+                <p className="text-muted-foreground mb-2">
+                  RAJA Health Care Clinic, Arisipalayam, Salem, Tamil Nadu
+                </p>
+                <p className="text-sm text-primary font-medium">Click to open Google Maps</p>
+              </a>
             </CardContent>
           </Card>
         </div>

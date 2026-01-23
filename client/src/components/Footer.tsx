@@ -77,13 +77,18 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold text-base">Contact Us</h3>
             <div className="space-y-3">
-              <div className="flex gap-3">
-                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <div className="text-sm text-muted-foreground">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=RAJA+Health+Care+Clinic+Arisipalayam+Salem+Tamil+Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex gap-3 hover:text-primary transition-colors group"
+              >
+                <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                <div className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
                   <div>Arisipalayam</div>
                   <div>Salem, Tamil Nadu</div>
                 </div>
-              </div>
+              </a>
               <div className="flex gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
                 <a href="tel:+919876543210" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-phone">
