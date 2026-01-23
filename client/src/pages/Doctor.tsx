@@ -3,10 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import {
-  GraduationCap,
   Award,
   Briefcase,
-  BookOpen,
   ArrowRight,
   Stethoscope
 } from "lucide-react";
@@ -20,25 +18,7 @@ export default function Doctor() {
     "Neuromuscular Disorders",
   ];
 
-  const qualifications = [
-    {
-      degree: "M.D. (Internal Medicine)",
-      institution: "Prestigious Medical Institution",
-      year: "2005"
-    },
-    {
-      degree: "D.M. (Neurology)",
-      institution: "Leading Neurology Institute",
-      year: "2008"
-    },
-  ];
 
-  const memberships = [
-    "Indian Academy of Neurology",
-    "Neurological Society of India",
-    "Indian Epilepsy Society",
-    "Movement Disorder Society of India",
-  ];
 
   return (
     <div className="min-h-screen pt-16">
@@ -129,32 +109,7 @@ export default function Doctor() {
         </div>
       </section>
 
-      {/* Qualifications */}
-      <section className="py-20 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <div className="flex items-center gap-3 mb-8">
-            <GraduationCap className="w-10 h-10 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold font-serif">Educational Qualifications</h2>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {qualifications.map((qual, index) => (
-              <Card key={index} className="hover-elevate transition-all duration-300" data-testid={`card-qualification-${index}`}>
-                <CardContent className="p-8">
-                  <div className="space-y-3">
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Award className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="text-xl font-semibold">{qual.degree}</h3>
-                    <p className="text-base text-muted-foreground">{qual.institution}</p>
-                    <p className="text-sm text-primary font-semibold">{qual.year}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Areas of Expertise */}
       <section className="py-20 md:py-24 bg-card">
@@ -177,26 +132,7 @@ export default function Doctor() {
         </div>
       </section>
 
-      {/* Professional Memberships */}
-      <section className="py-20 md:py-24">
-        <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <div className="flex items-center gap-3 mb-8">
-            <BookOpen className="w-10 h-10 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold font-serif">Professional Memberships</h2>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-4">
-            {memberships.map((membership, index) => (
-              <Card key={index} className="hover-elevate transition-all duration-300" data-testid={`card-membership-${index}`}>
-                <CardContent className="p-6 flex items-center gap-4">
-                  <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
-                  <p className="font-medium">{membership}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 md:py-24 bg-gradient-to-br from-primary/5 to-accent/20">
