@@ -78,22 +78,27 @@ export function Footer() {
             <h3 className="font-semibold text-base">Contact Us</h3>
             <div className="space-y-3">
               <a
-                href="https://www.google.com/maps/search/?api=1&query=RAJA+Health+Care+Clinic+Arisipalayam+Salem+Tamil+Nadu"
+                href="https://www.google.com/maps/search/?api=1&query=RAJA+Health+Care+Clinic+Arisipalayam+Salem"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex gap-3 hover:text-primary transition-colors group"
               >
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
                 <div className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
-                  <div>Arisipalayam</div>
-                  <div>Salem, Tamil Nadu</div>
+                  <div>Nalam Hospital Opp, Arisipalayam,</div>
+                  <div>4 roads, Salem - 636002</div>
                 </div>
               </a>
               <div className="flex gap-3">
                 <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="tel:+919876543210" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-phone">
-                  +91 98765 43210
-                </a>
+                <div className="flex flex-col">
+                  <a href="tel:+917695991173" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-phone-1">
+                    +91 76959 91173
+                  </a>
+                  <a href="tel:+918610356889" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-phone-2">
+                    +91 86103 56889
+                  </a>
+                </div>
               </div>
               <div className="flex gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />

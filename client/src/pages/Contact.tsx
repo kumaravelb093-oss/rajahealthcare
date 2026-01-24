@@ -63,20 +63,20 @@ export default function ContactPage() {
     {
       icon: MapPin,
       label: "Address",
-      value: ["RAJA Health Care Clinic", "Arisipalayam", "Salem, Tamil Nadu"],
-      link: "https://www.google.com/maps/search/?api=1&query=RAJA+Health+Care+Clinic+Arisipalayam+Salem+Tamil+Nadu",
+      value: ["Head Branch: Nalam Hospital Opp,", "Arisipalayam, 4 roads,", "Salem - 636002"],
+      link: "https://www.google.com/maps/search/?api=1&query=RAJA+Health+Care+Clinic+Arisipalayam+Salem",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: ["+91 98765 43210"],
-      link: "tel:+919876543210",
+      value: ["+91 76959 91173", "+91 86103 56889"],
+      link: "tel:+917695991173",
     },
     {
       icon: MessageSquare,
       label: "WhatsApp",
-      value: ["+91 98765 43210"],
-      link: "https://wa.me/919876543210",
+      value: ["+91 76959 91173"],
+      link: "https://wa.me/917695991173",
     },
     {
       icon: Mail,
@@ -311,13 +311,35 @@ export default function ContactPage() {
                   </div>
                 </CardContent>
               </Card>
+              {/* Other Branches */}
+              <Card>
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-semibold mb-4">Other Branches</h3>
+                  <div className="space-y-2">
+                    {[
+                      "Mullvadigate",
+                      "Mallur",
+                      "Sithanur",
+                      "Gorimedu",
+                      "Ammapet",
+                      "Rasipuram",
+                      "Seelanaickenpatti"
+                    ].map((branch) => (
+                      <div key={branch} className="flex items-center gap-2 text-muted-foreground">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0" />
+                        <span>{branch}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Map Placeholder */}
-      <section className="py-12 bg-accent/20">
+      < section className="py-12 bg-accent/20" >
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <Card>
             <CardContent className="p-8 md:p-12 text-center">
@@ -339,7 +361,7 @@ export default function ContactPage() {
             </CardContent>
           </Card>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }

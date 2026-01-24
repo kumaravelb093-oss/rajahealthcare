@@ -451,8 +451,8 @@ export default function Home() {
               <Phone className="w-10 h-10 text-primary flex-shrink-0" />
               <div>
                 <div className="font-semibold text-lg">Emergency Contact</div>
-                <a href="tel:+919876543210" className="text-primary font-medium hover:underline" data-testid="link-emergency-phone">
-                  +91 98765 43210
+                <a href="tel:+917695991173" className="text-primary font-medium hover:underline" data-testid="link-emergency-phone">
+                  +91 76959 91173
                 </a>
               </div>
             </div>
