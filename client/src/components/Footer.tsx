@@ -102,8 +102,8 @@ export function Footer() {
               </div>
               <div className="flex gap-3">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0" />
-                <a href="mailto:info@rajahealthcare.com" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-email">
-                  info@rajahealthcare.com
+                <a href="mailto:rajahealthcareclinic@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid="link-footer-email">
+                  rajahealthcareclinic@gmail.com
                 </a>
               </div>
               <div className="flex gap-3">

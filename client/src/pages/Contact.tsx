@@ -81,8 +81,8 @@ export default function ContactPage() {
     {
       icon: Mail,
       label: "Email",
-      value: ["info@rajahealthcare.com"],
-      link: "mailto:info@rajahealthcare.com",
+      value: ["rajahealthcareclinic@gmail.com"],
+      link: "mailto:rajahealthcareclinic@gmail.com",
     },
   ];
 
