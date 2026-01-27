@@ -1,0 +1,16 @@
+{
+    "light": {
+        "primary": "199 89% 48%",
+        "secondary": "210 20% 90%",
+        "accent": "199 30% 92%",
+        "background": "0 0% 100%",
+        "foreground": "220 15% 15%"
+    },
+    "dark": {
+        "primary": "199 85% 50%",
+        "secondary": "220 18% 18%",
+        "accent": "199 22% 21%",
+        "background": "220 18% 8%",
+        "foreground": "210 15% 92%"
+    }
+}

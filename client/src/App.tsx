@@ -12,6 +12,7 @@ import Doctor from "@/pages/Doctor";
 import Contact from "@/pages/Contact";
 import BookAppointment from "@/pages/BookAppointment";
 import NotFound from "@/pages/not-found";
+import { ThemeInitializer } from "@/components/ThemeInitializer";
 
 function Router() {
   return (
@@ -31,6 +32,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <ThemeInitializer />
         <div className="flex flex-col min-h-screen">
           <Navigation />
           <main className="flex-1">
